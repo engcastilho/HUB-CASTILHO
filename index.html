@@ -2,31 +2,37 @@
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Hub Castilho</title>
-  <meta name="description" content="Quem sou, minha formação e meus links.">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0e1013">
+  <title>Michael Castilho</title>
+  <meta name="description" content="Engenheiro civil e de segurança do trabalho, assessor parlamentar e professor de Inteligência Artificial.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Spectral:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="hub">
     <header class="perfil">
-      <div class="avatar" id="avatar"></div>
-      <h1 id="nome"></h1>
-      <p class="titulo" id="titulo"></p>
-      <p class="local" id="local"></p>
-      <p class="bio" id="bio"></p>
+      <div class="foto" id="foto"></div>
+      <p class="rotulo anima" id="rotulo"></p>
+      <h1 class="anima" id="nome"></h1>
+      <p class="local anima" id="local"></p>
+      <p class="bio anima" id="bio"></p>
     </header>
 
     <nav class="links" id="links" aria-label="Links"></nav>
 
-    <section class="bloco" id="bloco-formacao">
-      <h2>Formação</h2>
-      <ul class="formacao" id="formacao"></ul>
+    <blockquote class="frase anima" id="frase"></blockquote>
+
+    <section class="bloco anima" id="bloco-atuacao">
+      <h2>Atuação</h2>
+      <ul class="atuacao" id="atuacao"></ul>
     </section>
 
-    <section class="bloco" id="bloco-areas">
-      <h2>Áreas de atuação</h2>
-      <ul class="areas" id="areas"></ul>
+    <section class="bloco anima" id="bloco-formacao">
+      <h2>Formação</h2>
+      <ol class="formacao" id="formacao"></ol>
     </section>
 
     <footer class="rodape" id="rodape"></footer>

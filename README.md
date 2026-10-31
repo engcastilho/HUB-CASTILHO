@@ -1,21 +1,27 @@
 # Hub Castilho
 
-Página de links no estilo "link na bio" do Instagram: quem sou, minha formação,
-áreas de atuação e todos os meus contatos num só lugar.
+Página de links "link na bio" do Michael Castilho: quem sou, formação, atuação,
+comunidade CCIA e contatos num só lugar. Visual escuro com detalhes em dourado,
+feito primeiro para celular.
 
 ## Como editar
 
-Tudo fica em **`config.js`**: nome, profissão, bio, foto, botões, formação e áreas.
-Abra o arquivo, troque os textos entre aspas e salve. Não é preciso mexer nos outros arquivos.
+Quase tudo fica em **`config.js`**: nome, rótulo, bio, botão principal, links,
+frase, atuação e formação. Abra, troque os textos entre aspas e salve.
 
-- **Foto:** coloque a imagem na pasta (ex.: `foto.jpg`) e escreva `foto: "foto.jpg"`.
-  Sem foto, aparecem as iniciais do nome.
-- **Botões:** cada item de `links` vira um botão. Ícones disponíveis:
-  `instagram`, `whatsapp`, `linkedin`, `email`, `github`, `site`, `doc`.
-  Use `destaque: true` para deixar um botão colorido (o principal).
-- **WhatsApp:** o link é `https://wa.me/55` + DDD + número, só números. Ex.: `https://wa.me/5511999998888`.
+**Falta preencher** (estão como `#LINK_...` ou `DDDNUMERO`):
+- link da CCIA, do YouTube e do LinkedIn em `config.js`;
+- número do WhatsApp em `config.js` (`https://wa.me/55` + DDD + número, só números,
+  ex.: `https://wa.me/5569999998888`);
+- o mesmo número em **`contato.vcf`** (linha `TEL`, ex.: `+5569999998888`). É esse
+  arquivo que o botão "Salvar contato" entrega para a agenda do celular.
 
-Para ver no computador, basta abrir o `index.html` no navegador.
+Outras dicas:
+- **Foto:** `foto.webp`, com fundo transparente. Para trocar, use outra imagem sem
+  fundo com o mesmo nome.
+- **Ícones disponíveis:** `whatsapp`, `youtube`, `linkedin`, `instagram`, `email`, `site`, `doc`.
+
+Para ver no computador, abra o `index.html` no navegador.
 
 ## Como publicar de graça (GitHub Pages)
 
@@ -27,7 +33,9 @@ Para ver no computador, basta abrir o `index.html` no navegador.
 
 ## Arquivos
 
-- `config.js` — seus dados (o único que você precisa editar).
+- `config.js` — seus dados.
+- `contato.vcf` — cartão de contato do botão "Salvar contato".
+- `foto.webp` — sua foto sem fundo.
 - `index.html` — estrutura da página.
-- `style.css` — visual (cores, tamanhos). Tema claro e escuro automáticos.
+- `style.css` — visual (cores, letras, animação de entrada).
 - `app.js` — monta a página a partir do `config.js`.
